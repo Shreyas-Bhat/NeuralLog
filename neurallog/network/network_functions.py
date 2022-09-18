@@ -15,15 +15,17 @@
 """
 File to define custom functions to use in the network.
 """
+import sys
+sys.path.append('/content/NeuralLog')
 from collections import deque, Sequence
 from functools import reduce
 from typing import Dict, Callable
-
+import keras
 import bert
 import tensorflow as tf
 import tensorflow.keras
 from tensorflow.python.training.tracking import data_structures
-from tensorflow_core.python import keras
+#from tensorflow_core.python import keras
 
 import neurallog.network.layer_factory
 from neurallog.knowledge.graph import RuleGraph, Edge
