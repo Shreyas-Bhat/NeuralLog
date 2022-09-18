@@ -15,6 +15,8 @@
 """
 Handles the examples.
 """
+import sys
+sys.path.append('/content/NeuralLog')
 import collections
 import logging
 import sys
@@ -25,7 +27,10 @@ from typing import List, Tuple
 
 import numpy as np
 import tensorflow as tf
-from bert.tokenization.bert_tokenization import FullTokenizer
+import bert
+from bert import bert_tokenization
+from bert import tokenization
+#from bert_tokenization import FullTokenizer
 
 from neurallog.knowledge.examples import Examples
 from neurallog.knowledge.program import NeuralLogProgram, NO_EXAMPLE_SET, \
