@@ -28,6 +28,10 @@ import traceback
 
 # IMPROVE: import only the command names and description. Then, import only
 #  the class of the command the will be used.
+import sys
+sys.path.append('/content/NeuralLog')
+
+import neurallog
 import neurallog.run.command
 import neurallog.run.command.learn_structure
 import neurallog.run.command.output_nlp
